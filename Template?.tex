@@ -1,0 +1,90 @@
+\documentclass{article}
+
+
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+ 
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{lipsum}
+\usepackage{multicol}
+\usepackage[letterpaper, margin=1in]{geometry}
+
+\fancyhf{} % clear all header and footers
+\renewcommand{\headrulewidth}{0pt} % remove the header rule
+\fancyfoot[LE,RO]{\thepage}
+\pagestyle{fancy}
+
+
+\newbox\one
+\newbox\two
+\long\def\loremlines#1{%
+    \setbox\one=\vbox {%
+       Test.\footnote{a footnote}%
+      \lipsum\footnote{Another footnote.}%
+     }
+   \setbox\two=\vsplit\one to #1\baselineskip
+   \unvbox\two}
+
+\begin{document}
+\begin{multicols}{2}
+\textbf{POKEMON NAME} 
+
+\includegraphics[width=0.9\linewidth]{Blank.png}
+
+\begin{center}Base Stats\end{center}
+\begin{tabular}{ l l }
+HP: & 5\\
+Attack: & 5\\
+Defense: & 5\\
+Special Attack: & 5\\
+Special Defense: & 5\\
+Speed: & 5\\
+\end{tabular}
+\begin{center}Basic Information\end{center}
+Type: ???\\
+Basic Ability 1: That Thing\\
+Basic Ability 2: The Other Thing\\
+Adv Ability 1: A Better Thing\\
+Adv Ability 2: The Other Other Thing\\
+High Ability: The Really Cool Thing\\
+
+\noindent Evolution:\\
+1 - Pokemon Name\\
+2 - Pokemon Name 2 Minimum ???
+\\\\
+\begin{center}Size Information\end{center}
+Height : X? Y? / Zm (Size)\\
+Weight : A lbs. / Bkg (WC)
+\\\\
+\begin{center}Breeding Information\end{center}
+Gender Ratio : p\% M / (1-p)\%F\\
+Egg Group : ???\\
+Average Hatch Rate : D Days
+\\\\
+\noindent Diet : Something-vore\\
+Habitat : A Place
+\vfill\null
+\columnbreak
+\begin{center}Capability List\end{center}
+Overland A, Swim B, Jump L/H, Power C, A Few, Other, Capabilities
+
+\begin{center}Skill List\end{center}
+Athl Ad6, Acro Bd6, Combat Cd6, Stealth Dd6, Percep Ed6, Focus Fd6
+
+\begin{center}Move List\end{center}
+Level Up Move List\\
+\indent\indent1 First Move - First Type\\
+\indent\indent5 Second Move - Second Type\\
+\indent\indent10 Third Move - Third Type\\
+
+\noindent TM/HM Move List\\
+\indent\indent 03 Psyshock, 04 Calm Mind, 06 Toxic, 10Hidden Power, 16 Light Screen, 17 Protect, 18 Rain Dance, 20 Safeguard, 21 Frustration, 24  underbolt, 27 Return, 29 Psychic, 30 Shadow Ball, 32 Double Team, 33 Re ect, 39 Rock Tomb, 42 Facade, 44 Rest, 45 Attract, 46  ief, 48 Round, 49 Echoed Voice,51 Steel Wing, 53 Energy Ball, 57 Charge Beam, 63 Embargo, 70 Flash, 73  under Wave, 77 Psych Up, 80 Rock Slide, 85 Dream Eater, 87 Swagger, 88 Sleep Talk, 90 Substitute, 92 Trick Room, 97 Dark Pulse
+\\\\
+Egg Move List\\
+\indent\indent Ally Switch, Astonish, Barrier, Cosmic Power,Disable, Guard Swap, Nasty Plot, Power Swap, Skill Swap, Teleport
+\\\\
+Tutor Move List\\
+\indent\indent Ally Switch, A er You, Dark Pulse, Gravity, Magic Coat, Pain Split, Recycle, Role Play, Signal Beam, Skill Swap, Sleep Talk, Snatch, Snore, Telekinesis, Trick, Uproar, Wonder Room, Zen Headbutt
+\end{multicols}
+\end{document}
