@@ -1,5 +1,5 @@
 # DexRemade
-Link for the Google Drive Sheet to JSON-ify form data: https://docs.google.com/spreadsheets/d/1ZJau0GSDALpxlidSzN_B9_Mqwx_1ChQN2x2oEKTQNNs/edit?usp=sharing
+Link for the Google Drive Sheet to JSON-ify form data: http://bit.ly/2of5lrh
 
 Entry Link for the above Drive Sheet: http://bit.ly/2noAh4O
 
